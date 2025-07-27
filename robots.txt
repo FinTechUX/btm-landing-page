@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.betterthanmost.app/sitemap.xml
+
+# Disallow crawling of any temporary or testing files
+Disallow: /test/
+Disallow: /tmp/
+Disallow: /*.md$
+
+# Allow crawling of all main pages
+Allow: /index.html
+Allow: /contact.html
+Allow: /policies.html
+Allow: /termsandconditions.html
+
+# Allow crawling of images and assets
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.gif
+Allow: /*.css
+Allow: /*.js 
