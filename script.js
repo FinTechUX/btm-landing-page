@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 e.preventDefault();
                 
                 // Replace this URL with your actual App Store link
-                const appStoreURL = 'https://apps.apple.com/app/better-than-most/id123456789'; // Replace with actual App Store ID
+                const appStoreURL = 'https://apps.apple.com/us/app/better-than-most/id6747754387';
                 
                 // For demo purposes, show an alert. Replace with actual redirect
                 alert('This would redirect to the App Store. Replace the URL in script.js with your actual App Store link.');
