@@ -74,11 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Replace this URL with your actual App Store link
                 const appStoreURL = 'https://apps.apple.com/us/app/better-than-most/id6747754387';
                 
-                // For demo purposes, show an alert. Replace with actual redirect
-                // alert('This would redirect to the App Store. Replace the URL in script.js with your actual App Store link.');
-                
-                // Uncomment the line below and comment out the alert when you have your App Store URL
-                // window.open(appStoreURL, '_blank');
+                window.open(appStoreURL, '_blank');
             });
         }
     });
