@@ -492,6 +492,193 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Section Subtitle */
+.section-subtitle {
+    text-align: center;
+    font-size: 1.15rem;
+    color: var(--text-light);
+    margin-bottom: 50px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+/* Hero Trust Badge */
+.hero-trust {
+    margin-top: 20px;
+    font-size: 0.95rem;
+    color: var(--text-light);
+    font-weight: 500;
+}
+
+/* How to Play Fantasy Golf Section */
+.how-to-play {
+    padding: 100px 0;
+    background: var(--white);
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.step-card {
+    background: var(--background-light);
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.step-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-yellow);
+    box-shadow: var(--shadow-hover);
+}
+
+.step-number {
+    width: 50px;
+    height: 50px;
+    background: var(--primary-green);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 auto 20px;
+}
+
+.step-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--primary-green);
+    margin-bottom: 15px;
+}
+
+.step-card p {
+    color: var(--text-light);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.how-to-play-cta {
+    text-align: center;
+    padding: 40px;
+    background: linear-gradient(135deg, var(--primary-green) 0%, #0a5d44 100%);
+    border-radius: 20px;
+    color: var(--white);
+}
+
+.how-to-play-cta p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    opacity: 0.95;
+}
+
+.how-to-play-cta .btn-primary {
+    background: var(--accent-yellow);
+    color: var(--primary-green);
+    font-weight: 600;
+    padding: 15px 35px;
+}
+
+.how-to-play-cta .btn-primary:hover {
+    background: var(--white);
+    transform: translateY(-3px);
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 100px 0;
+    background: var(--background-light);
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+}
+
+.faq-item {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-hover);
+}
+
+.faq-question {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--primary-green);
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.faq-answer {
+    color: var(--text-light);
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+/* Footer Tagline */
+.footer-tagline {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    color: var(--white);
+}
+
+/* Responsive for new sections */
+@media (max-width: 768px) {
+    .steps-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .section-subtitle {
+        font-size: 1rem;
+        padding: 0 15px;
+    }
+    
+    .how-to-play-cta {
+        padding: 30px 20px;
+    }
+    
+    .how-to-play-cta p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .step-card {
+        padding: 30px 20px;
+    }
+    
+    .faq-item {
+        padding: 25px 20px;
+    }
+    
+    .faq-question {
+        font-size: 1.05rem;
+    }
+}
+
 /* Contact Page Styles */
 .contact-section {
     padding: 120px 0 100px;
