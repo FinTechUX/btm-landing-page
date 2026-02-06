@@ -183,7 +183,7 @@
     <link rel="sitemap" type="application/xml" href="/sitemap.xml">
     
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
@@ -194,130 +194,162 @@
                     <img src="better-than-most-logo.png" alt="Better than Most - Fantasy Golf App Logo" class="logo">
                 </a>
             </div>
-            <div class="nav-menu">
+            <div class="nav-menu" id="navMenu">
                 <a href="#features" class="nav-link">Features</a>
                 <a href="#how-to-play" class="nav-link">How to Play</a>
                 <a href="#faq" class="nav-link">FAQ</a>
                 <a href="/blog/" class="nav-link">Blog</a>
-                <a href="#download" class="nav-link cta-button">Download</a>
+                <a href="https://apps.apple.com/us/app/better-than-most/id6747754387" class="nav-link cta-button" target="_blank" rel="noopener">Download</a>
             </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero">
+        <div class="hero-bg-pattern"></div>
         <div class="hero-container">
             <div class="hero-content">
+                <div class="hero-badge">The #1 Fantasy Golf App</div>
                 <h1 class="hero-title">
-                    The Best <span class="highlight">Fantasy Golf App</span> for Friends
+                    Play fantasy golf<br>with your friends
                 </h1>
                 <p class="hero-subtitle">
-                    Play fantasy golf with friends using the Better than Most app. Create private fantasy golf leagues, 
-                    track live PGA Tour scoring, and compete for bragging rights all season long.
+                    Create leagues, pick your golfers, and compete for bragging rights across every PGA Tour tournament.
                 </p>
                 <div class="hero-buttons">
-                    <a href="#download" class="btn btn-primary">
+                    <a href="https://apps.apple.com/us/app/better-than-most/id6747754387" class="btn btn-primary" target="_blank" rel="noopener">
                         <img src="https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg" alt="Download Better than Most Fantasy Golf App on App Store" class="app-store-badge">
                     </a>
-                    <a href="#how-to-play" class="btn btn-secondary">How to Play</a>
                 </div>
-                <p class="hero-trust">Low-cost passes - No gambling - Pure competition</p>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <span class="stat-value">4.8</span>
+                        <span class="stat-label">App Rating</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="hero-stat">
+                        <span class="stat-value">Every</span>
+                        <span class="stat-label">PGA Event</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="hero-stat">
+                        <span class="stat-value">$0</span>
+                        <span class="stat-label">To Download</span>
+                    </div>
+                </div>
             </div>
-            <div class="hero-image">
+            <div class="hero-phone-wrapper">
+                <div class="hero-phone-glow"></div>
                 <img src="home.png" alt="Better than Most fantasy golf app showing PGA Tour tournaments and fantasy league standings" class="hero-phone">
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
+    <!-- Features Bento Grid Section -->
     <section id="features" class="features">
         <div class="container">
-            <h2 class="section-title">Why Better than Most is the Best Fantasy Golf App</h2>
-            <p class="section-subtitle">Everything you need for the ultimate fantasy golf experience with friends</p>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🏆</div>
-                    <h3>Create Fantasy Golf Leagues</h3>
-                    <p>Set up private fantasy golf leagues with friends and family. Invite anyone to join your league and compete together throughout the entire PGA Tour season.</p>
+            <div class="section-header">
+                <span class="section-tag">Features</span>
+                <h2 class="section-title">Everything you need for fantasy golf</h2>
+                <p class="section-subtitle">Built for golf fans who love friendly competition</p>
+            </div>
+            <div class="bento-grid">
+                <!-- Large card: Leagues -->
+                <div class="bento-card bento-large card-green">
+                    <div class="bento-card-content">
+                        <h3>Create Private Leagues</h3>
+                        <p>Set up leagues with friends and family. Invite anyone with a link and compete all season long.</p>
+                    </div>
+                    <div class="bento-card-image">
+                        <img src="create-games.jpeg" alt="Create private fantasy golf leagues with friends in the Better than Most app" class="bento-img">
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📊</div>
-                    <h3>Live Fantasy Golf Scoring</h3>
-                    <p>Track real-time fantasy golf scoring during every PGA Tour tournament. Watch your team climb the leaderboard with live updates as the action unfolds.</p>
+                <!-- Medium card: Live Scoring -->
+                <div class="bento-card bento-medium card-yellow">
+                    <div class="bento-card-content">
+                        <h3>Live Scoring</h3>
+                        <p>Real-time leaderboards during every PGA Tour event. Watch your picks climb the ranks.</p>
+                    </div>
+                    <div class="bento-card-image">
+                        <img src="leaderboard.png" alt="Live fantasy golf scoring and leaderboard in the Better than Most app" class="bento-img">
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">⛳</div>
-                    <h3>Complete PGA Tour Coverage</h3>
-                    <p>Play fantasy golf for every PGA Tour tournament. From The Masters to the PGA Championship, compete in all the biggest golf events of the year.</p>
+                <!-- Medium card: Tournaments -->
+                <div class="bento-card bento-medium card-sage">
+                    <div class="bento-card-content">
+                        <h3>Full PGA Tour Coverage</h3>
+                        <p>From The Masters to the FedEx Cup. Every major, every tournament, every week.</p>
+                    </div>
+                    <div class="bento-card-image">
+                        <img src="tournaments.jpeg" alt="Complete PGA Tour tournament schedule in the Better than Most fantasy golf app" class="bento-img">
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🎯</div>
-                    <h3>Pure Fantasy Golf Fun</h3>
-                    <p>No gambling, no cash prizes - just pure fantasy golf competition. Low-cost passes let you compete with friends for bragging rights all season.</p>
+                <!-- Large card: Compete -->
+                <div class="bento-card bento-large card-cream">
+                    <div class="bento-card-content">
+                        <h3>Pure Competition</h3>
+                        <p>No gambling, no cash prizes. Just bragging rights and the thrill of picking winners. Low-cost passes keep it accessible for everyone.</p>
+                    </div>
+                    <div class="bento-card-image">
+                        <img src="home.png" alt="Better than Most fantasy golf app dashboard showing tournaments and standings" class="bento-img">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- How to Play Fantasy Golf Section -->
+    <!-- How to Play Section -->
     <section id="how-to-play" class="how-to-play">
         <div class="container">
-            <h2 class="section-title">How to Play Fantasy Golf</h2>
-            <p class="section-subtitle">Getting started with fantasy golf is easy. Here's how to play on Better than Most:</p>
-            <div class="steps-grid">
-                <div class="step-card">
-                    <div class="step-number">1</div>
-                    <h3>Download the Fantasy Golf App</h3>
-                    <p>Get the Better than Most fantasy golf app from the App Store. Create your account in seconds and browse upcoming PGA Tour tournaments.</p>
-                </div>
-                <div class="step-card">
-                    <div class="step-number">2</div>
-                    <h3>Create or Join a League</h3>
-                    <p>Start your own private fantasy golf league and invite friends, or join an existing league. Compete with colleagues, family, or your golf buddies.</p>
-                </div>
-                <div class="step-card">
-                    <div class="step-number">3</div>
-                    <h3>Pick Your Golfers</h3>
-                    <p>Before each PGA Tour tournament, select the golfers you think will perform best. Choose wisely - your fantasy golf success depends on it!</p>
-                </div>
-                <div class="step-card">
-                    <div class="step-number">4</div>
-                    <h3>Watch & Compete</h3>
-                    <p>Follow live scoring as your fantasy golf team earns points based on real tournament performance. Track the leaderboard and claim bragging rights!</p>
-                </div>
+            <div class="section-header">
+                <span class="section-tag">Getting Started</span>
+                <h2 class="section-title">How to play fantasy golf</h2>
+                <p class="section-subtitle">Up and running in minutes. Here's how it works.</p>
             </div>
-            <div class="how-to-play-cta">
-                <p>Ready to play fantasy golf? Download the best fantasy golf app and start competing today!</p>
-                <a href="#download" class="btn btn-primary">Get Started</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Screenshots Section -->
-    <section id="screenshots" class="screenshots">
-        <div class="container">
-            <h2 class="section-title">See Our Fantasy Golf App in Action</h2>
-            <p class="section-subtitle">Experience the best fantasy golf app interface designed for golf fans</p>
-            <div class="screenshots-grid">
-                <div class="screenshot-item">
-                    <img src="home.png" alt="Better than Most fantasy golf app home screen displaying upcoming PGA Tour tournaments, active fantasy golf leagues, and quick access to make picks" class="screenshot-img">
-                    <h3>Fantasy Golf Dashboard</h3>
-                    <p>Your fantasy golf home base with upcoming PGA Tour tournaments and active leagues</p>
+            <div class="steps-timeline">
+                <div class="step-card" data-step="01">
+                    <div class="step-indicator">
+                        <div class="step-dot"></div>
+                        <div class="step-line"></div>
+                    </div>
+                    <div class="step-content">
+                        <h3>Download the app</h3>
+                        <p>Grab Better than Most from the App Store. Create your account in seconds and browse upcoming PGA Tour tournaments.</p>
+                    </div>
                 </div>
-                <div class="screenshot-item">
-                    <img src="leaderboard.png" alt="Live fantasy golf leaderboard showing real-time PGA Tour scoring, friend rankings, and fantasy points in the Better than Most app" class="screenshot-img">
-                    <h3>Live Fantasy Scoring</h3>
-                    <p>Real-time fantasy golf leaderboards updated throughout PGA Tour tournaments</p>
+                <div class="step-card" data-step="02">
+                    <div class="step-indicator">
+                        <div class="step-dot"></div>
+                        <div class="step-line"></div>
+                    </div>
+                    <div class="step-content">
+                        <h3>Create or join a league</h3>
+                        <p>Start your own private league and invite friends, or join an existing one. Compete with colleagues, family, or your golf crew.</p>
+                    </div>
                 </div>
-                <div class="screenshot-item">
-                    <img src="tournaments.jpeg" alt="Complete PGA Tour season schedule in Better than Most fantasy golf app showing all tournaments, majors, and results" class="screenshot-img">
-                    <h3>Full PGA Tour Schedule</h3>
-                    <p>Play fantasy golf for every tournament including The Masters, US Open, and more</p>
+                <div class="step-card" data-step="03">
+                    <div class="step-indicator">
+                        <div class="step-dot"></div>
+                        <div class="step-line"></div>
+                    </div>
+                    <div class="step-content">
+                        <h3>Pick your golfers</h3>
+                        <p>Before each PGA Tour event, select the golfers you think will dominate. Build your dream squad and trust your picks.</p>
+                    </div>
                 </div>
-                <div class="screenshot-item">
-                    <img src="create-games.jpeg" alt="Create private fantasy golf league screen in Better than Most app for setting up competitions with friends and family" class="screenshot-img">
-                    <h3>Create Fantasy Golf Leagues</h3>
-                    <p>Easy setup to create private fantasy golf leagues and invite friends</p>
+                <div class="step-card" data-step="04">
+                    <div class="step-indicator">
+                        <div class="step-dot"></div>
+                    </div>
+                    <div class="step-content">
+                        <h3>Watch & compete</h3>
+                        <p>Follow live scoring as your team racks up points. Track the leaderboard and claim bragging rights over your friends.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -326,33 +358,66 @@
     <!-- FAQ Section -->
     <section id="faq" class="faq-section">
         <div class="container">
-            <h2 class="section-title">Fantasy Golf FAQ</h2>
-            <p class="section-subtitle">Common questions about fantasy golf and the Better than Most app</p>
-            <div class="faq-grid">
-                <div class="faq-item">
-                    <h3 class="faq-question">What is Fantasy Golf?</h3>
-                    <p class="faq-answer">Fantasy golf is a game where you select real PGA Tour golfers to form your team before each tournament. Your team earns points based on how your selected golfers perform in real tournaments. It's a fun way to compete with friends while following professional golf.</p>
-                </div>
-                <div class="faq-item">
-                    <h3 class="faq-question">How much does Better than Most cost?</h3>
-                    <p class="faq-answer">Better than Most is free to download. To play, you'll need a low-cost season pass or competition pass. These affordable passes help cover platform and data costs while keeping fantasy golf accessible for everyone.</p>
-                </div>
-                <div class="faq-item">
-                    <h3 class="faq-question">How do I play fantasy golf?</h3>
-                    <p class="faq-answer">Playing fantasy golf is easy: Download the app, create or join a fantasy golf league with friends, pick your golfers before each PGA Tour tournament, then watch your team score points based on real tournament performance!</p>
-                </div>
-                <div class="faq-item">
-                    <h3 class="faq-question">Can I create private fantasy golf leagues?</h3>
-                    <p class="faq-answer">Absolutely! Better than Most makes it easy to create private fantasy golf leagues. Simply create a league, invite your friends via a share link, and start competing together throughout the PGA Tour season.</p>
-                </div>
-                <div class="faq-item">
-                    <h3 class="faq-question">Does the app have live fantasy golf scoring?</h3>
-                    <p class="faq-answer">Yes! Better than Most provides live scoring updates during all PGA Tour tournaments. Watch your fantasy golf team's performance in real-time and see exactly where you stand on the leaderboard against your friends.</p>
-                </div>
-                <div class="faq-item">
-                    <h3 class="faq-question">Is fantasy golf gambling?</h3>
-                    <p class="faq-answer">No, Better than Most is not a gambling app. We offer fantasy golf for fun and bragging rights only. There are no cash prizes, real-money wagering, or pooled stakes. It's pure friendly competition among friends.</p>
-                </div>
+            <div class="section-header">
+                <span class="section-tag">FAQ</span>
+                <h2 class="section-title">Common questions</h2>
+                <p class="section-subtitle">Everything you need to know about fantasy golf on Better than Most</p>
+            </div>
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span>What is fantasy golf?</span>
+                        <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Fantasy golf is a game where you select real PGA Tour golfers to form your team before each tournament. Your team earns points based on how your selected golfers perform in real tournaments. It's a fun way to compete with friends while following professional golf.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span>How much does Better than Most cost?</span>
+                        <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Better than Most is free to download. To play, you'll need a low-cost season pass or competition pass. These affordable passes help cover platform and data costs while keeping fantasy golf accessible for everyone.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span>How do I play fantasy golf?</span>
+                        <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Playing fantasy golf is easy: Download the app, create or join a fantasy golf league with friends, pick your golfers before each PGA Tour tournament, then watch your team score points based on real tournament performance!</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span>Can I create private leagues with friends?</span>
+                        <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Absolutely! Better than Most makes it easy to create private fantasy golf leagues. Simply create a league, invite your friends via a share link, and start competing together throughout the PGA Tour season.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span>Does the app have live scoring?</span>
+                        <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Yes! Better than Most provides live scoring updates during all PGA Tour tournaments. Watch your fantasy golf team's performance in real-time and see exactly where you stand on the leaderboard against your friends.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        <span>Is this gambling?</span>
+                        <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>No, Better than Most is not a gambling app. We offer fantasy golf for fun and bragging rights only. There are no cash prizes, real-money wagering, or pooled stakes. It's pure friendly competition among friends.</p>
+                    </div>
+                </details>
             </div>
         </div>
     </section>
@@ -360,15 +425,21 @@
     <!-- CTA Section -->
     <section id="download" class="cta-section">
         <div class="container">
-            <div class="cta-content">
-                <h2>Download the Best Fantasy Golf App Today</h2>
-                <p>Join thousands of golf fans playing fantasy golf with friends. Download Better than Most and start your journey to fantasy golf glory.</p>
-                <div class="cta-buttons">
-                    <a href="https://apps.apple.com/us/app/better-than-most/id6747754387" class="btn btn-primary btn-large" target="_blank" rel="noopener">
-                        <img src="https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg" alt="Download Better than Most Fantasy Golf App on the App Store" class="app-store-badge">
-                    </a>
+            <div class="cta-card">
+                <div class="cta-content">
+                    <h2>Ready to play?</h2>
+                    <p>Download Better than Most and start competing with your friends today.</p>
+                    <div class="cta-buttons">
+                        <a href="https://apps.apple.com/us/app/better-than-most/id6747754387" class="btn btn-primary btn-large" target="_blank" rel="noopener">
+                            <img src="https://developer.apple.com/app-store/marketing/guidelines/images/badge-download-on-the-app-store.svg" alt="Download Better than Most Fantasy Golf App on the App Store" class="app-store-badge">
+                        </a>
+                    </div>
+                    <p class="cta-note">Free to download &middot; No gambling &middot; Play with friends</p>
                 </div>
-                <p class="cta-note">Low-cost passes • No gambling • Play with friends</p>
+                <div class="cta-phones">
+                    <img src="leaderboard.png" alt="Fantasy golf leaderboard" class="cta-phone cta-phone-back">
+                    <img src="home.png" alt="Fantasy golf dashboard" class="cta-phone cta-phone-front">
+                </div>
             </div>
         </div>
     </section>
@@ -384,21 +455,27 @@
                     <p class="footer-tagline">The best fantasy golf app for competing with friends</p>
                 </div>
                 <div class="footer-links">
-                    <a href="#features" class="footer-link">Fantasy Golf Features</a>
-                    <a href="#how-to-play" class="footer-link">How to Play</a>
-                    <a href="#faq" class="footer-link">FAQ</a>
-                    <a href="/blog/" class="footer-link">Blog</a>
-                    <a href="contact.html" class="footer-link">Support</a>
-                    <a href="policies.html" class="footer-link">Policies</a>
-                    <a href="termsandconditions.html" class="footer-link">Terms</a>
+                    <div class="footer-col">
+                        <h4>Product</h4>
+                        <a href="#features" class="footer-link">Features</a>
+                        <a href="#how-to-play" class="footer-link">How to Play</a>
+                        <a href="#faq" class="footer-link">FAQ</a>
+                        <a href="/blog/" class="footer-link">Blog</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <a href="contact.html" class="footer-link">Support</a>
+                        <a href="policies.html" class="footer-link">Policies</a>
+                        <a href="termsandconditions.html" class="footer-link">Terms</a>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Better than Most. The best fantasy golf app for PGA Tour fans.</p>
+                <p>&copy; 2026 Better than Most. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
-</html> 
+</html>
