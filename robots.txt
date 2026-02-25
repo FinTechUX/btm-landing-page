@@ -14,6 +14,8 @@ Allow: /index.html
 Allow: /contact.html
 Allow: /policies.html
 Allow: /termsandconditions.html
+Allow: /brand-facts.html
+Allow: /guides/
 
 # Allow crawling of images and assets
 Allow: /*.png

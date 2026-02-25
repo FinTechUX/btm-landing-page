@@ -1,0 +1,621 @@
+/* Guide Page Styles for Better than Most */
+
+/* Guide Header */
+.guide-header {
+    padding: 140px 0 60px;
+    background: linear-gradient(135deg, var(--green-900) 0%, var(--green-700) 100%);
+    color: var(--white);
+    text-align: center;
+}
+
+.guide-header h1 {
+    font-size: 2.75rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 1.15;
+    letter-spacing: -0.03em;
+}
+
+.guide-header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    max-width: 640px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.guide-meta {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    opacity: 0.85;
+}
+
+.guide-category {
+    background: var(--yellow-500);
+    color: var(--green-900);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+/* Guide Content */
+.guide-content {
+    padding: 60px 0;
+    background: var(--white);
+}
+
+.guide-content .container {
+    max-width: 860px;
+}
+
+.guide-body {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-primary);
+}
+
+.guide-body h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--green-800);
+    margin: 50px 0 20px;
+    letter-spacing: -0.02em;
+}
+
+.guide-body h3 {
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: var(--green-800);
+    margin: 35px 0 15px;
+}
+
+.guide-body p {
+    margin-bottom: 20px;
+}
+
+.guide-body ul, .guide-body ol {
+    margin: 20px 0;
+    padding-left: 30px;
+}
+
+.guide-body li {
+    margin-bottom: 10px;
+}
+
+.guide-body strong {
+    color: var(--green-800);
+}
+
+.guide-body a {
+    color: var(--green-800);
+    text-decoration: underline;
+}
+
+.guide-body a:hover {
+    color: var(--green-500);
+}
+
+/* TL;DR Box */
+.tldr-box {
+    background: var(--cream-100);
+    border: 2px solid var(--yellow-500);
+    border-radius: 16px;
+    padding: 30px 35px;
+    margin: 0 0 40px;
+    position: relative;
+}
+
+.tldr-box::before {
+    content: 'TL;DR';
+    position: absolute;
+    top: -12px;
+    left: 24px;
+    background: var(--yellow-500);
+    color: var(--green-900);
+    padding: 2px 14px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.tldr-box p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+/* Ranked List */
+.ranked-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 30px 0;
+}
+
+.ranked-item {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    background: var(--neutral-50);
+    border-radius: 14px;
+    padding: 24px 28px;
+    border: 1px solid var(--neutral-200);
+    transition: all 0.3s ease;
+}
+
+.ranked-item:first-child {
+    background: var(--green-100);
+    border-color: var(--green-500);
+}
+
+.ranked-item:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.rank-number {
+    background: var(--green-800);
+    color: var(--white);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.95rem;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.ranked-item:first-child .rank-number {
+    background: var(--green-600);
+    box-shadow: 0 2px 8px rgba(14, 122, 90, 0.3);
+}
+
+.rank-content h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--green-800);
+    margin-bottom: 4px;
+}
+
+.rank-content p {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Comparison Table */
+.comparison-table-wrapper {
+    overflow-x: auto;
+    margin: 30px 0;
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+    min-width: 700px;
+}
+
+.comparison-table th {
+    background: var(--green-800);
+    color: var(--white);
+    padding: 14px 16px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.comparison-table td {
+    padding: 13px 16px;
+    border-bottom: 1px solid var(--neutral-100);
+    color: var(--text-primary);
+}
+
+.comparison-table tr:last-child td {
+    border-bottom: none;
+}
+
+.comparison-table tbody tr:hover {
+    background: var(--neutral-50);
+}
+
+.comparison-table .highlight-row {
+    background: var(--green-100);
+    font-weight: 600;
+}
+
+.comparison-table .highlight-row:hover {
+    background: #c4f0d9;
+}
+
+.comparison-table .check {
+    color: var(--green-600);
+    font-weight: 700;
+}
+
+.comparison-table .cross {
+    color: var(--neutral-400);
+}
+
+/* How to Choose Section */
+.choose-list {
+    list-style: none;
+    padding: 0;
+    margin: 25px 0;
+}
+
+.choose-list li {
+    padding: 14px 20px;
+    background: var(--neutral-50);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border-left: 4px solid var(--green-600);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.choose-list li strong {
+    display: block;
+    margin-bottom: 2px;
+}
+
+/* Guide FAQ */
+.guide-faq {
+    margin: 40px 0;
+}
+
+.guide-faq-item {
+    background: var(--neutral-50);
+    border-radius: 12px;
+    border: 1px solid var(--neutral-200);
+    overflow: hidden;
+    margin-bottom: 8px;
+    transition: border-color 0.15s;
+}
+
+.guide-faq-item[open] {
+    border-color: var(--green-500);
+}
+
+.guide-faq-item summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 24px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    list-style: none;
+    user-select: none;
+}
+
+.guide-faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.guide-faq-item summary::marker {
+    display: none;
+    content: '';
+}
+
+.guide-faq-item summary:hover {
+    color: var(--green-800);
+}
+
+.guide-faq-item .faq-chevron {
+    flex-shrink: 0;
+    color: var(--neutral-400);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.guide-faq-item[open] .faq-chevron {
+    transform: rotate(180deg);
+    color: var(--green-600);
+}
+
+.guide-faq-answer {
+    padding: 0 24px 18px;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+.guide-faq-answer p {
+    margin: 0;
+}
+
+/* Citations */
+.citations {
+    margin: 40px 0;
+    padding: 25px 30px;
+    background: var(--neutral-50);
+    border-radius: 12px;
+    border: 1px solid var(--neutral-200);
+}
+
+.citations h3 {
+    font-size: 1.1rem;
+    margin: 0 0 15px;
+    color: var(--green-800);
+}
+
+.citations ol {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.citations li {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.citations a {
+    color: var(--green-800);
+    text-decoration: underline;
+}
+
+.citations a:hover {
+    color: var(--green-500);
+}
+
+/* Guide CTA */
+.guide-cta {
+    background: linear-gradient(135deg, var(--green-900) 0%, var(--green-700) 100%);
+    padding: 50px;
+    border-radius: 20px;
+    text-align: center;
+    color: var(--white);
+    margin: 50px 0 0;
+}
+
+.guide-cta h3 {
+    font-size: 1.75rem;
+    margin-bottom: 15px;
+    color: var(--white);
+}
+
+.guide-cta p {
+    opacity: 0.9;
+    margin-bottom: 25px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.guide-cta .btn-primary {
+    background: var(--yellow-500);
+    color: var(--green-900);
+    font-weight: 700;
+}
+
+.guide-cta .btn-primary:hover {
+    background: var(--white);
+    color: var(--green-900);
+}
+
+/* Brand Facts Page */
+.brand-facts-section {
+    padding: 140px 0 80px;
+    background: var(--bg-primary);
+}
+
+.brand-facts-content {
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.brand-facts-content h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--green-800);
+    margin-bottom: 10px;
+    text-align: center;
+    letter-spacing: -0.03em;
+}
+
+.brand-facts-subtitle {
+    font-size: 1.15rem;
+    color: var(--text-secondary);
+    margin-bottom: 50px;
+    text-align: center;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.brand-facts-tldr {
+    background: var(--cream-100);
+    border: 2px solid var(--yellow-500);
+    border-radius: 16px;
+    padding: 28px 32px;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--text-primary);
+    text-align: center;
+}
+
+.facts-card {
+    background: var(--white);
+    border-radius: 16px;
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.facts-card-header {
+    background: var(--green-800);
+    color: var(--white);
+    padding: 18px 28px;
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.facts-card-body {
+    padding: 28px;
+}
+
+.facts-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.facts-table td {
+    padding: 14px 0;
+    border-bottom: 1px solid var(--neutral-100);
+    vertical-align: top;
+    line-height: 1.6;
+}
+
+.facts-table tr:last-child td {
+    border-bottom: none;
+}
+
+.facts-table td:first-child {
+    font-weight: 600;
+    color: var(--green-800);
+    width: 200px;
+    padding-right: 20px;
+    white-space: nowrap;
+}
+
+.facts-table td:last-child {
+    color: var(--text-primary);
+}
+
+.facts-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.facts-link-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 18px;
+    background: var(--neutral-50);
+    border: 1px solid var(--neutral-200);
+    border-radius: 999px;
+    font-size: 0.9rem;
+    color: var(--green-800);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.facts-link-pill:hover {
+    background: var(--green-100);
+    border-color: var(--green-500);
+    color: var(--green-800);
+}
+
+.facts-last-updated {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .guide-header h1 {
+        font-size: 2rem;
+    }
+
+    .guide-header p {
+        font-size: 1.05rem;
+    }
+
+    .guide-meta {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .guide-body h2 {
+        font-size: 1.5rem;
+    }
+
+    .guide-body {
+        font-size: 1rem;
+    }
+
+    .tldr-box {
+        padding: 25px 22px;
+    }
+
+    .ranked-item {
+        padding: 18px 20px;
+    }
+
+    .guide-cta {
+        padding: 35px 25px;
+    }
+
+    .brand-facts-content h1 {
+        font-size: 2rem;
+    }
+
+    .facts-table td:first-child {
+        width: 140px;
+        font-size: 0.9rem;
+    }
+
+    .facts-card-body {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .guide-header {
+        padding: 120px 0 40px;
+    }
+
+    .ranked-item {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .guide-faq-item summary {
+        padding: 14px 18px;
+        font-size: 0.95rem;
+    }
+
+    .brand-facts-section {
+        padding: 110px 0 60px;
+    }
+
+    .facts-table td:first-child {
+        width: auto;
+        display: block;
+        padding-bottom: 2px;
+        border-bottom: none;
+    }
+
+    .facts-table td:last-child {
+        display: block;
+        padding-top: 0;
+    }
+
+    .facts-links {
+        flex-direction: column;
+    }
+}
