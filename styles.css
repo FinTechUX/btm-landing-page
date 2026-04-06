@@ -680,6 +680,118 @@ a {
 
 
 /* ===========================
+   REVIEWS SECTION
+   =========================== */
+.reviews-section {
+    padding: var(--space-5xl) 0;
+    background: var(--bg-surface);
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-lg);
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.review-card {
+    background: var(--neutral-50);
+    border: 1px solid var(--neutral-200);
+    border-radius: var(--radius-xl);
+    padding: var(--space-xl) var(--space-xl) var(--space-lg);
+    display: flex;
+    flex-direction: column;
+    transition: transform var(--duration-normal) var(--ease-out),
+                box-shadow var(--duration-normal) var(--ease-out);
+}
+
+.review-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.review-card-featured {
+    grid-column: 1 / -1;
+    background: linear-gradient(135deg, var(--green-900) 0%, var(--green-700) 100%);
+    border: none;
+    color: var(--white);
+}
+
+.review-card-featured .review-title {
+    color: var(--white);
+}
+
+.review-card-featured .review-text {
+    color: rgba(255, 255, 255, 0.88);
+}
+
+.review-card-featured .review-author {
+    color: var(--yellow-500);
+}
+
+.review-card-featured .review-date {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.review-stars {
+    color: var(--yellow-500);
+    font-size: var(--text-lg);
+    letter-spacing: 2px;
+    margin-bottom: var(--space-md);
+}
+
+.review-title {
+    font-size: var(--text-xl);
+    font-weight: 700;
+    color: var(--green-800);
+    margin-bottom: var(--space-sm);
+    letter-spacing: -0.02em;
+}
+
+.review-text {
+    font-size: var(--text-sm);
+    line-height: 1.7;
+    color: var(--text-secondary);
+    flex: 1;
+    margin-bottom: var(--space-lg);
+}
+
+.review-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: var(--space-md);
+    border-top: 1px solid var(--neutral-200);
+}
+
+.review-card-featured .review-meta {
+    border-top-color: rgba(255, 255, 255, 0.15);
+}
+
+.review-author {
+    font-weight: 600;
+    font-size: var(--text-sm);
+    color: var(--green-800);
+}
+
+.review-date {
+    font-size: var(--text-xs);
+    color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .review-card-featured {
+        grid-column: 1;
+    }
+}
+
+
+/* ===========================
    FAQ SECTION
    =========================== */
 .faq-section {
