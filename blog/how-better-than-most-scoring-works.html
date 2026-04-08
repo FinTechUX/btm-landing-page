@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6TRPXS7TK2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6TRPXS7TK2');
+</script>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="/better-than-most-logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Better than Most Scoring Works | Fantasy Golf Scoring Explained</title>
+    <meta name="description" content="How scoring works in Better than Most fantasy golf. Shot-by-shot points, bonus rewards, and position scoring explained. Every birdie, eagle, and bogey-free round counts.">
+    <meta name="keywords" content="fantasy golf scoring, Better than Most scoring, how fantasy golf points work, fantasy golf scoring system, fantasy golf birdie points, fantasy golf position scoring, PGA fantasy scoring">
+    <meta name="author" content="Better than Most">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.betterthanmost.app/blog/how-better-than-most-scoring-works.html">
+    <meta property="og:title" content="How Better than Most Scoring Works">
+    <meta property="og:description" content="Shot-by-shot points, bonus rewards, and position scoring. Here's exactly how your fantasy golf picks earn points.">
+    <meta property="og:image" content="https://www.betterthanmost.app/better-than-most-logo.png">
+    <meta property="og:site_name" content="Better than Most">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="How Better than Most Scoring Works">
+    <meta name="twitter:description" content="Shot-by-shot points, bonus rewards, and position scoring. Here's exactly how your fantasy golf picks earn points.">
+    <meta name="twitter:image" content="https://www.betterthanmost.app/better-than-most-logo.png">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "How Better than Most Scoring Works",
+        "description": "How scoring works in Better than Most fantasy golf. Shot-by-shot points, bonus rewards, and position scoring explained.",
+        "author": {
+            "@type": "Organization",
+            "name": "Better than Most"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Better than Most",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.betterthanmost.app/better-than-most-logo.png"
+            }
+        },
+        "datePublished": "2026-04-08",
+        "dateModified": "2026-04-08",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.betterthanmost.app/blog/how-better-than-most-scoring-works.html"
+        },
+        "image": "https://www.betterthanmost.app/better-than-most-logo.png"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How does scoring work in Better than Most fantasy golf?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Better than Most uses a three-layer scoring system: shot-by-shot points (birdies earn +3, eagles +8, albatrosses +13, pars +0.5, bogeys -0.5, doubles or worse -1), bonus points for streaks and clean rounds (birdie streak +3, bogey-free round +3, sub-70 round +5, hole-in-one +5), and position points based on where your golfer finishes in the tournament (1st place = +30 down to 41st-50th = +1)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How many points is a birdie worth in Better than Most?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "A birdie is worth +3 points in Better than Most. An eagle is worth +8, and an albatross is worth +13. Pars earn +0.5, while bogeys cost -0.5 and double bogeys or worse cost -1."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are bonus points in Better than Most fantasy golf?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bonus points reward exceptional play: three or more birdies in a row earns +3 points, a bogey-free round earns +3 points, any round under 70 earns +5 points, and a hole-in-one earns +5 points. These bonuses stack on top of regular shot-by-shot scoring."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <link rel="canonical" href="https://www.betterthanmost.app/blog/how-better-than-most-scoring-works.html">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="blog.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        .scoring-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 1rem;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        .scoring-table thead th {
+            background: var(--primary-green);
+            color: var(--white);
+            padding: 14px 18px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+        .scoring-table td {
+            padding: 12px 18px;
+            border-bottom: 1px solid var(--background-light);
+        }
+        .scoring-table tbody tr:hover {
+            background: var(--background-light);
+        }
+        .scoring-table .points-positive {
+            color: var(--primary-green);
+            font-weight: 700;
+        }
+        .scoring-table .points-negative {
+            color: #dc2626;
+            font-weight: 700;
+        }
+        .scoring-table .points-neutral {
+            color: var(--text-light);
+            font-weight: 600;
+        }
+        .scoring-layer {
+            background: var(--background-light);
+            border-radius: 15px;
+            padding: 30px;
+            margin: 30px 0;
+        }
+        .scoring-layer h3 {
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .layer-number {
+            background: var(--primary-green);
+            color: var(--white);
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+        .scenario-box {
+            background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+            border-left: 4px solid var(--primary-green);
+            padding: 25px 30px;
+            margin: 30px 0;
+            border-radius: 0 12px 12px 0;
+        }
+        .scenario-box h4 {
+            color: var(--primary-green);
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        .scenario-box .scenario-total {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary-green);
+            margin-top: 12px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="/" title="Better than Most - Best Fantasy Golf App">
+                    <img src="../better-than-most-logo.png" alt="Better than Most Logo" class="logo">
+                </a>
+            </div>
+            <div class="nav-menu">
+                <a href="/#features" class="nav-link">Features</a>
+                <a href="/#how-to-play" class="nav-link">How to Play</a>
+                <a href="/blog/" class="nav-link active">Blog</a>
+                <a href="/#download" class="nav-link cta-button">Download</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="blog-post-header">
+        <div class="container">
+            <div class="blog-post-meta">
+                <span class="blog-post-category">Scoring</span>
+                <span>April 2026</span>
+                <span>6 min read</span>
+            </div>
+            <h1>How Better than Most Scoring Works</h1>
+            <p class="blog-post-excerpt">Every shot matters. Every bonus stacks. And where your golfer finishes can swing your entire week. Here's exactly how points work in Better than Most.</p>
+        </div>
+    </header>
+
+    <article class="blog-post-content">
+        <div class="container">
+            <div class="blog-post-body">
+
+                <p>Most fantasy golf apps hand you points based on where your golfer finishes. That's it. You pick a name, wait four days, and check a number.</p>
+
+                <p>Better than Most works differently. Our scoring system has three layers, and each one is designed to keep you engaged from the first tee shot on Thursday morning to the final putt on Sunday afternoon.</p>
+
+                <h2>The Three Layers of Scoring</h2>
+
+                <p>Every golfer on your team earns points through:</p>
+
+                <ol>
+                    <li><strong>Shot-by-shot scoring</strong> — points for every hole, every round</li>
+                    <li><strong>Bonus points</strong> — rewards for exceptional play</li>
+                    <li><strong>Position scoring</strong> — points for where they finish on the leaderboard</li>
+                </ol>
+
+                <p>This means you're not just hoping your pick wins. You're earning points the entire tournament. A golfer who finishes 25th but fires a bogey-free 67 on Saturday is giving you real value, not just a disappointing finish.</p>
+
+                <div class="scoring-layer">
+                    <h3><span class="layer-number">1</span> Shot-by-Shot Scoring</h3>
+                    <p>Every hole your golfer plays earns or costs points. The system is simple: good shots are rewarded, bad shots are penalised, and the scale reflects how rare and impressive each outcome is.</p>
+                </div>
+
+                <table class="scoring-table">
+                    <thead>
+                        <tr>
+                            <th>Result</th>
+                            <th>What It Means</th>
+                            <th>Points</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Albatross</strong></td>
+                            <td>3 under par on a hole</td>
+                            <td class="points-positive">+13</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Eagle</strong></td>
+                            <td>2 under par on a hole</td>
+                            <td class="points-positive">+8</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Birdie</strong></td>
+                            <td>1 under par on a hole</td>
+                            <td class="points-positive">+3</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Par</strong></td>
+                            <td>Level par on a hole</td>
+                            <td class="points-neutral">+0.5</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Bogey</strong></td>
+                            <td>1 over par on a hole</td>
+                            <td class="points-negative">-0.5</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Double bogey or worse</strong></td>
+                            <td>2+ over par on a hole</td>
+                            <td class="points-negative">-1</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p>A few things to notice. <strong>Pars earn half a point.</strong> That matters. A golfer grinding out 18 pars still gives you 9 points for the round. Steady play is valued, not ignored.</p>
+
+                <p>The gap between a birdie (+3) and a bogey (-0.5) is 3.5 points. That's the swing on every single hole. It means a golfer who makes 5 birdies and 3 bogeys (+13.5 from those 8 holes) is vastly more valuable than one who pars everything (+9 for 18 holes). Aggressive, scoring golf is rewarded.</p>
+
+                <p>And albatrosses at +13? They're almost mythical in professional golf. When one happens, you'll feel it in your fantasy score.</p>
+
+                <div class="scoring-layer">
+                    <h3><span class="layer-number">2</span> Bonus Points</h3>
+                    <p>On top of the shot-by-shot scoring, your golfers can earn bonus points for putting together something special. These stack on top of everything else.</p>
+                </div>
+
+                <table class="scoring-table">
+                    <thead>
+                        <tr>
+                            <th>Bonus</th>
+                            <th>What Triggers It</th>
+                            <th>Points</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Birdie Streak</strong></td>
+                            <td>3 or more birdies (or better) in a row</td>
+                            <td class="points-positive">+3</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Bogey-Free Round</strong></td>
+                            <td>Complete a round with zero bogeys</td>
+                            <td class="points-positive">+3</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Sub-70 Round</strong></td>
+                            <td>Shoot 69 or lower in a round</td>
+                            <td class="points-positive">+5</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Hole-in-One</strong></td>
+                            <td>Score a 1 on any hole</td>
+                            <td class="points-positive">+5</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p>The <strong>birdie streak</strong> bonus is where things get exciting. When your golfer makes three birdies in a row, you get +3 on top of the +9 from the birdies themselves. That's 12 points from three consecutive holes. If you're watching live, that stretch will have you out of your seat.</p>
+
+                <p>The <strong>bogey-free round</strong> bonus rewards consistency. It's harder than it sounds. PGA Tour players average around 3 bogeys per round. When someone goes 18 holes without dropping a shot, it's a genuine achievement worth recognising.</p>
+
+                <p>And the <strong>sub-70 round</strong> bonus at +5 points is significant. A golfer who fires a 68 in round 3 isn't just helping your team with birdies — they're getting a flat +5 on top. Low rounds become game-changers.</p>
+
+                <p>These bonuses can stack. A bogey-free 67 with a birdie streak earns the shot-by-shot points <em>plus</em> the bogey-free bonus (+3) <em>plus</em> the sub-70 bonus (+5) <em>plus</em> the birdie streak bonus (+3). One round, multiple bonus triggers.</p>
+
+                <div class="scoring-layer">
+                    <h3><span class="layer-number">3</span> Position Scoring</h3>
+                    <p>After the final round, your golfers earn points based on where they finish on the tournament leaderboard. This is where the big swings happen.</p>
+                </div>
+
+                <table class="scoring-table">
+                    <thead>
+                        <tr>
+                            <th>Finish</th>
+                            <th>Points</th>
+                            <th></th>
+                            <th>Finish</th>
+                            <th>Points</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>1st</strong></td>
+                            <td class="points-positive">+30</td>
+                            <td></td>
+                            <td><strong>8th</strong></td>
+                            <td class="points-positive">+9</td>
+                        </tr>
+                        <tr>
+                            <td><strong>2nd</strong></td>
+                            <td class="points-positive">+20</td>
+                            <td></td>
+                            <td><strong>9th</strong></td>
+                            <td class="points-positive">+8</td>
+                        </tr>
+                        <tr>
+                            <td><strong>3rd</strong></td>
+                            <td class="points-positive">+18</td>
+                            <td></td>
+                            <td><strong>10th</strong></td>
+                            <td class="points-positive">+7</td>
+                        </tr>
+                        <tr>
+                            <td><strong>4th</strong></td>
+                            <td class="points-positive">+16</td>
+                            <td></td>
+                            <td><strong>11th–15th</strong></td>
+                            <td class="points-positive">+6</td>
+                        </tr>
+                        <tr>
+                            <td><strong>5th</strong></td>
+                            <td class="points-positive">+14</td>
+                            <td></td>
+                            <td><strong>16th–20th</strong></td>
+                            <td class="points-positive">+5</td>
+                        </tr>
+                        <tr>
+                            <td><strong>6th</strong></td>
+                            <td class="points-positive">+12</td>
+                            <td></td>
+                            <td><strong>21st–25th</strong></td>
+                            <td class="points-positive">+4</td>
+                        </tr>
+                        <tr>
+                            <td><strong>7th</strong></td>
+                            <td class="points-positive">+10</td>
+                            <td></td>
+                            <td><strong>26th–30th</strong></td>
+                            <td class="points-positive">+3</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><strong>31st–40th</strong></td>
+                            <td class="points-positive">+2</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><strong>41st–50th</strong></td>
+                            <td class="points-positive">+1</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p>The gap between 1st (+30) and 2nd (+20) is 10 points. That's enormous — roughly the equivalent of your golfer making three extra birdies and a bonus. Winning a tournament in real life matters just as much in fantasy.</p>
+
+                <p>But notice how deep the position scoring goes. A golfer who finishes 35th still earns +2 points. Combined with four rounds of shot-by-shot scoring and any bonuses they triggered along the way, even a mid-pack finish can contribute meaningful points to your team.</p>
+
+                <h2>Putting It All Together: A Real Scenario</h2>
+
+                <p>Let's say one of your golfers has this tournament:</p>
+
+                <div class="scenario-box">
+                    <h4>Round 3 — Saturday</h4>
+                    <p>Your golfer shoots a bogey-free 66: 6 birdies, 12 pars, 0 bogeys. Three of the birdies come in a row on holes 10, 11, and 12.</p>
+                    <ul>
+                        <li>6 birdies: <strong>+18</strong></li>
+                        <li>12 pars: <strong>+6</strong></li>
+                        <li>Birdie streak bonus (3 in a row): <strong>+3</strong></li>
+                        <li>Bogey-free round bonus: <strong>+3</strong></li>
+                        <li>Sub-70 round bonus: <strong>+5</strong></li>
+                    </ul>
+                    <p class="scenario-total">Round 3 total: +35 points</p>
+                </div>
+
+                <p>That's 35 points from a single round. If that golfer goes on to finish 5th for the tournament, they pick up another +14 in position scoring on top of whatever they earned across all four rounds.</p>
+
+                <p>Now compare that to a golfer who shoots 72 (level par) every round and finishes 30th. Across four rounds of 18 pars, they'd earn +36 from shot scoring (9 points per round) plus +3 for finishing 26th–30th. Solid, but nothing like the upside of a golfer who goes low.</p>
+
+                <h2>Why This System Works for Fantasy Golf</h2>
+
+                <p>The three-layer design means there's always something happening. You're not waiting until Sunday afternoon to see if your picks paid off.</p>
+
+                <ul>
+                    <li><strong>Thursday and Friday</strong> — shot-by-shot scoring keeps you engaged from the first tee. Every birdie, every bogey, every bonus triggers in real time.</li>
+                    <li><strong>Saturday</strong> — the moving day charges and low rounds that trigger sub-70 and streak bonuses can reshape your fantasy leaderboard.</li>
+                    <li><strong>Sunday</strong> — position scoring lands. A golfer climbing from 15th to 5th on the final day isn't just exciting to watch — it's an 8-point swing in your fantasy score.</li>
+                </ul>
+
+                <p>It also means picking strategy goes deeper than just "who will win." A golfer who consistently shoots in the mid-60s without winning might outscore a tournament winner who grinds out ugly rounds. Birdie-makers, streak players, and consistent ball-strikers all have fantasy value.</p>
+
+                <div class="callout-box">
+                    <p><strong>The key insight:</strong> In Better than Most, how your golfer plays matters just as much as where they finish. That's what makes every round worth following.</p>
+                </div>
+
+                <div class="blog-post-cta">
+                    <h3>See the Scoring in Action</h3>
+                    <p>Download Better than Most, pick your team, and watch the points roll in shot by shot.</p>
+                    <a href="https://apps.apple.com/us/app/better-than-most/id6747754387" class="btn btn-primary" target="_blank" rel="noopener">Download Better than Most</a>
+                </div>
+
+            </div>
+        </div>
+    </article>
+
+    <section class="related-posts">
+        <div class="container">
+            <h3>More from the Blog</h3>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <a href="how-to-win-fantasy-golf-strategy-guide.html" class="blog-card-link">
+                        <div class="blog-card-image">
+                            <span class="blog-card-category">Strategy</span>
+                            🏆
+                        </div>
+                        <div class="blog-card-content">
+                            <h2>How to Win Your Fantasy Golf League: 7 Strategies from Top Players</h2>
+                            <p>Proven tactics to climb the leaderboard and make smarter picks.</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="blog-card">
+                    <a href="what-is-fantasy-golf-beginners-guide.html" class="blog-card-link">
+                        <div class="blog-card-image">
+                            <span class="blog-card-category">Beginner</span>
+                            📚
+                        </div>
+                        <div class="blog-card-content">
+                            <h2>What is Fantasy Golf? A Complete Beginner's Guide</h2>
+                            <p>Everything new players need to know before making their first picks.</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="blog-card">
+                    <a href="masters-2026-winner-trends-fantasy-golf.html" class="blog-card-link">
+                        <div class="blog-card-image">
+                            <span class="blog-card-category">Masters</span>
+                            🏌️
+                        </div>
+                        <div class="blog-card-content">
+                            <h2>You (Probably) Can't Fight History at The Masters</h2>
+                            <p>19 winner trends, decades of data, and only three players match 17 of 19.</p>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="/">
+                        <img src="../better-than-most-logo.png" alt="Better than Most" class="logo">
+                    </a>
+                    <p class="footer-tagline">The best fantasy golf app for competing with friends</p>
+                </div>
+                <div class="footer-links">
+                    <a href="/#features" class="footer-link">Features</a>
+                    <a href="/#how-to-play" class="footer-link">How to Play</a>
+                    <a href="/blog/" class="footer-link">Blog</a>
+                    <a href="/contact.html" class="footer-link">Support</a>
+                    <a href="/policies.html" class="footer-link">Policies</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Better than Most. The best fantasy golf app for PGA Tour fans.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>
